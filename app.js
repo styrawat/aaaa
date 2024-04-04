@@ -20,7 +20,7 @@ app.use(express.static("public"));
 app.use(cors());
 
 app.get("/",async (req,res)=>{
-  res.send("Hello all fine");
+  res.json("Hello all fine");
 });
 
 app.get("/data", async (req,res)=>{
